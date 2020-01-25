@@ -11,7 +11,7 @@ plugins/*
 
 # Ignore everything in "themes" except the active theme. #
 themes/*
-!themes/quotesondev-starter-master/
+!themes/quotes-on-dev/
 
 # Ignore packages #
 
