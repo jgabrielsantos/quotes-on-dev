@@ -3,6 +3,10 @@
 --------------------------------------------------------------*/
 
 /* Posts and pages */
+.home {
+	display: flex;
+	justify-content: center;
+}
 
 .sticky {
 	display: block;

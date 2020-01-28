@@ -2,7 +2,19 @@
 # Page Templates
 --------------------------------------------------------------*/
 /* Header */
+.site-header {
+    margin: 50px 0;
+}
 
+.site-branding {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .logo {
+        width: 800px;
+    }
+}
 
 /* All Archives Page */
 

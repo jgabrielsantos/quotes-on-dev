@@ -12,6 +12,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="profile" href="http://gmpg.org/xfn/11">
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+		<script src="https://kit.fontawesome.com/4a78412303.js" crossorigin="anonymous"></script>
 
 	<?php wp_head(); ?>
 	</head>
@@ -23,7 +24,7 @@
 			<header id="masthead" class="site-header" role="banner">
 				<div class="site-branding">
 					<a href="/QUOTES-ON-DEV/">
-						<img src="wp-content/themes/quotes-on-dev/project-05/assets/qod-logo.svg" alt="homepage logo">
+						<img class="logo" src="wp-content/themes/quotes-on-dev/project-05/assets/qod-logo.svg" alt="homepage logo">
 					</a>
 				</div><!-- .site-branding -->
 
