@@ -18,12 +18,26 @@ get_header(); ?>
 				</header>
 			<?php endif; ?>
 
-			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
-
-				<?php get_template_part( 'template-parts/content' ); ?>
-
-			<?php endwhile; ?>
+			<div class="quotes">
+				<?php
+					$args = array(
+						'post_type'		 => 'post',
+						'orderby' 		 => 'rand',
+						'order'          => 'ASC',
+						'posts_per_page' => 1
+					);
+					$posts = get_posts( $args );
+					echo "<h1>". $posts[0]->post_content . "</h1>";
+				?>
+				<div class="quote_rights">
+					<p>- <?php echo $posts[0]->post_title; ?></p>
+					<?php $link = get_post_meta( $posts[0]->ID, 'quote_source_url'); ?>
+					<a href=" <?php echo $link ?>"> <?php get_post_meta( $posts[0]->ID, 'quote_source') ?> </a>
+				</div>
+				<div class="refresh">
+					<button class="new-quote">Show Me Another!</button>
+				</div>
+			</div>
 
 			<?php the_posts_navigation(); ?>
 
