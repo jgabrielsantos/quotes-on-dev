@@ -27,13 +27,21 @@ get_header(); ?>
 						'posts_per_page' => 1
 					);
 					$posts = get_posts( $args );
-					echo "<h1>". $posts[0]->post_content . "</h1>";
+					$post = get_post_meta( $posts[0]->ID, 'quote_source');
+					// echo "<h1>". $posts[0]->post_content . "</h1>";
+
+
+					if (have_posts()) : the_post();
+						echo '<h1 class="post_content">'; the_content(); 
+						echo '</h1>';
+						echo '<div class="quote_rights"> 
+								<p class="author">'; the_title(); echo '</p>
+								<a class="link" href="';$post->post_name; echo '"><p>'; get_post_meta( $posts[0]->ID, 'quote_source'); echo '</p><a>
+							</div>';
+				endif;
+
 				?>
-				<div class="quote_rights">
-					<p>- <?php echo $posts[0]->post_title; ?></p>
-					<?php $link = get_post_meta( $posts[0]->ID, 'quote_source_url'); ?>
-					<a href=" <?php echo $link ?>"> <?php get_post_meta( $posts[0]->ID, 'quote_source') ?> </a>
-				</div>
+				
 				<div class="refresh">
 					<button class="new-quote">Show Me Another!</button>
 				</div>

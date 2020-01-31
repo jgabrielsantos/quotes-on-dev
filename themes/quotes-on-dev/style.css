@@ -610,11 +610,28 @@ object {
   .site-branding .logo {
     width: 360px; }
 
-/* Quotes */
-.quotes {
+/* Front Page */
+.site-main {
   margin: 0 10px; }
-  .quotes p {
-    color: #ffffff; }
+  .site-main .entry-content {
+    margin-top: 50px; }
+
+p {
+  color: #ffffff; }
+
+a {
+  color: #00cc00;
+  text-decoration: none; }
+  a:hover {
+    border-color: #009600;
+    color: #009600; }
+
+#link {
+  color: #00cc00;
+  text-decoration: none; }
+  #link:hover {
+    border-color: #009600;
+    color: #009600; }
 
 .posts-navigation {
   display: none; }
@@ -652,16 +669,11 @@ object {
       padding: 0 1rem; }
       .menu ul li:last-child {
         border: none; }
-      .menu ul li a {
-        color: #00cc00;
-        text-decoration: none; }
 
 .footer-branding {
   margin: 10px;
   color: #ffffff; }
-  .footer-branding a {
-    color: #00cc00;
-    text-decoration: none; }
 
+/* About Page */
 /* All Archives Page */
 /* Submit a Quote Page */
