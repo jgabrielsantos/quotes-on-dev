@@ -680,13 +680,12 @@ a {
     width: 80%;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between; }
+    display: flex; }
     .menu ul li {
       border-right: 1px solid #ffffff;
       padding: 0 1rem; }
+      .menu ul li:first-child {
+        padding-left: 0; }
       .menu ul li:last-child {
         border: none; }
 

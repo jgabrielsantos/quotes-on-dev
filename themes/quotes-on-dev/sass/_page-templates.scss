@@ -69,11 +69,13 @@ a {
     ul {
         width: 80%;
         display: flex;
-        justify-content: space-between;
 
         li {
             border-right: 1px solid #ffffff;
             padding: 0 1rem;
+            &:first-child {
+                padding-left: 0;
+            }
             &:last-child {
                 border: none;
             }
