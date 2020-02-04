@@ -16,6 +16,6 @@
 				<p class="footer-branding">Brought to you by <a id="link" href="https://redacademy.com">RED Academy</a></p>
 			</footer><!-- #colophon -->
 		</div><!-- #page -->
-
+	<?php echo wp_footer() ?>
 	</body>
 </html>

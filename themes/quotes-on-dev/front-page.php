@@ -28,12 +28,13 @@ get_header(); ?>
 					);
 					$posts = get_posts( $args );
 					$post = get_post_meta( $posts[0]->ID, 'quote_source');
-					// echo "<h1>". $posts[0]->post_content . "</h1>";
 
 
 					if (have_posts()) : the_post();
-						echo '<h1 class="post_content">'; the_content(); 
+						echo '<h1 class="post_content">';
+						the_content(); 
 						echo '</h1>';
+						
 						echo '<div class="quote_rights"> 
 								<p class="author">'; the_title(); echo '</p>
 								<a class="link" href="';$post->post_name; echo '"><p>'; get_post_meta( $posts[0]->ID, 'quote_source'); echo '</p><a>
