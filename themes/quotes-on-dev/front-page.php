@@ -23,7 +23,6 @@ get_header(); ?>
 					$args = array(
 						'post_type'		 => 'post',
 						'orderby' 		 => 'rand',
-						'order'          => 'ASC',
 						'posts_per_page' => 1
 					);
 					$posts = get_posts( $args );
