@@ -706,6 +706,9 @@ a {
     border-color: #009600;
     color: #009600; }
 
+.entry-content .quote {
+  height: 100px; }
+
 /* Footer */
 footer {
   margin: 20px auto; }
