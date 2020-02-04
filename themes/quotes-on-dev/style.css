@@ -667,7 +667,29 @@ a {
     border-color: #009600;
     color: #009600; }
 
+/* All Archives Page */
+.authors .items, .categories .items, .tags .items {
+  width: 100vw;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.authors h2, .categories h2, .tags h2 {
+  padding-top: 50px; }
+
+.authors p, .authors .tag-cloud-link, .authors .cat-item, .categories p, .categories .tag-cloud-link, .categories .cat-item, .tags p, .tags .tag-cloud-link, .tags .cat-item {
+  margin: 10px 12px;
+  margin-left: 0;
+  font-size: 1.25rem; }
+
+/* Submit a Quote Page */
 /* Footer */
+footer {
+  margin: 20px auto; }
+
 .menu {
   margin: 40px 10px 10px 10px;
   display: -webkit-box;
@@ -692,7 +714,3 @@ a {
 .footer-branding {
   margin: 10px;
   color: #ffffff; }
-
-/* About Page */
-/* All Archives Page */
-/* Submit a Quote Page */

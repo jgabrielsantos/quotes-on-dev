@@ -60,7 +60,36 @@ a {
     }
 }
 
+
+/* All Archives Page */
+.authors, .categories, .tags {
+    & .items {
+        width: 100vw;
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    h2{
+        padding-top: 50px;
+    }
+
+    p, .tag-cloud-link, .cat-item {
+        margin: 10px 12px;
+        margin-left: 0;
+        font-size: 1.25rem;
+    }
+ }
+
+
+/* Submit a Quote Page */
+
+
 /* Footer */
+footer {
+    margin: 20px auto;
+}
+
 .menu {
     margin: 40px 10px 10px 10px;
     display: flex;
@@ -87,11 +116,3 @@ a {
     margin: 10px;
     color: #ffffff;
 }
-
-/* About Page */
-
-
-
-/* All Archives Page */
-
-/* Submit a Quote Page */
