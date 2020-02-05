@@ -685,7 +685,7 @@ a {
   margin-left: 0;
   font-size: 1.25rem; }
 
-/* Categories Page */
+/* Categories and Tags Page */
 .category-post {
   border-top: 1px dotted #ffffff;
   padding: 10px 0;
@@ -706,8 +706,11 @@ a {
     border-color: #009600;
     color: #009600; }
 
+.entry-content .author, .entry-content .source, .entry-content .source-url {
+  width: 65%; }
+
 .entry-content .quote {
-  height: 100px; }
+  height: 90px; }
 
 /* Footer */
 footer {

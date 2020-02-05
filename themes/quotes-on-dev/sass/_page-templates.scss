@@ -82,18 +82,18 @@ a {
  }
 
 
- /* Categories Page */
+/* Categories and Tags Page */
 .category-post {
     border-top: 1px dotted #ffffff;
     padding: 10px 0;
     font-size: 1.2rem;
- }
+}
 
- .categories-page{
+.categories-page{
     &:last-child {
         border-bottom: 1px dotted #ffffff;
     }
- }
+}
 
 
 /* Submit a Quote Page */
@@ -111,8 +111,12 @@ a {
         }
     }
 
+    .author, .source, .source-url {
+        width: 65%;
+    }
+
     .quote {
-        height: 100px;
+        height: 90px;
     }
 }
 
