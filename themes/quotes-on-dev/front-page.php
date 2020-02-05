@@ -35,7 +35,7 @@ get_header(); ?>
 						echo '</h1>';
 						
 						echo '<div class="quote_rights"> 
-								<p class="author">'; the_title(); echo '</p>
+								<p class="author">-- '; the_title(); echo '</p>
 								<a class="link" href="';$post->post_name; echo '"><p>'; get_post_meta( $posts[0]->ID, 'quote_source'); echo '</p><a>
 							</div>';
 				endif;

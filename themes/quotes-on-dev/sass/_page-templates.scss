@@ -3,28 +3,28 @@
 --------------------------------------------------------------*/
 /* Header */
 .site-branding {
-    margin: 60px 10px;
+    margin: 60px 5%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    
     .logo {
         width: 360px;
+        @include tablet {
+            width: 600px;
+        }
     }
 }
 
 /* Front Page */
 .site-main {
-    margin: 0 10px;
+    margin: 0 5%;
     .entry-content {
         margin-top: 50px;
     }
 }
-
 p {
     color: #ffffff;
 }
-
 a {
     color: #00cc00;
     text-decoration: none;
@@ -69,11 +69,9 @@ a {
         display: flex;
         flex-wrap: wrap;
     }
-
     h2{
         padding-top: 50px;
     }
-
     p, .tag-cloud-link, .cat-item {
         margin: 10px 12px;
         margin-left: 0;
@@ -110,30 +108,71 @@ a {
             color: #009600;
         }
     }
-
     .author, .source, .source-url {
         width: 65%;
+        color: #ffffff;
+        &:focus {
+            color: #ffffff;
+        }
     }
-
     .quote {
         height: 90px;
+        color: #ffffff;
+        &:focus {
+            color: #ffffff;
+        }
+    }
+}
+
+/* Search Page */
+.search-form {
+    .search-field {
+        color: #ffffff;
+        &:focus {
+            color: #ffffff;
+        }
+    }
+}
+.search-results {
+    .page-title {
+        padding-bottom: 30px;
+        border-bottom: 1px dotted #ffffff;
+    }
+    .entry-header {
+        padding-top: 5px;
     }
 }
 
 /* Footer */
 footer {
-    margin: 20px auto;
-}
+    margin: 20px 5%;
 
+    @include tablet {
+        display: flex;
+        width: 72vw;
+    }
+}
+.main-navigation {
+    @include tablet {
+        width: 74%;
+        display: flex;
+        justify-content: flex-end;
+    }
+}
 .menu {
     margin: 40px 10px 10px 10px;
     display: flex;
     justify-content: flex-start;
+    @include tablet {
+        justify-content: center;
+    }
     
     ul {
         width: 80%;
         display: flex;
-
+        @include tablet {
+            width: 100%;
+        }
         li {
             border-right: 1px solid #ffffff;
             padding: 0 1rem;
@@ -142,12 +181,18 @@ footer {
             }
             &:last-child {
                 border: none;
+                @include tablet {
+                    border-right: 1px solid #ffffff;
+                }
             }
         }
     }
 }
-
 .footer-branding {
     margin: 10px;
     color: #ffffff;
+    @include tablet {
+        padding-top: 32px;
+        width: 64%;
+    }
 }
