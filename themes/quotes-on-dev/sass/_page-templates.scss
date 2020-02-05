@@ -7,6 +7,9 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    @include desktop {
+        margin: 60px 32%;
+    }
     .logo {
         width: 360px;
         @include tablet {

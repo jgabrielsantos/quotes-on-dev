@@ -595,6 +595,25 @@ a {
   clear: both;
   margin: 0 0 1.5rem; }
 
+@media (min-width: 1240px) {
+  .site-content {
+    width: 50vw;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; } }
+
+.fa-quote-left, .fa-quote-right {
+  display: none; }
+  @media (min-width: 1240px) {
+    .fa-quote-left, .fa-quote-right {
+      display: block;
+      color: #0c0;
+      font-family: "Font Awesome\ 5 Free";
+      font-weight: 900;
+      font-size: 115px;
+      margin-top: 1rem; } }
+
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
@@ -627,6 +646,9 @@ object {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
+  @media (min-width: 1240px) {
+    .site-branding {
+      margin: 60px 32%; } }
   .site-branding .logo {
     width: 360px; }
     @media (min-width: 600px) {
