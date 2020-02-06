@@ -22,4 +22,4 @@ Lastly, be sure to update your `gulpfile.js` with the appropriate URL for the Br
 
 And now would be a good time to `git init` :)
 
-![Homepage Screenshot](Screenshot 2020-02-05 18.10.55.png)
+![Homepage Screenshot](Homepage-Screenshot.png)
