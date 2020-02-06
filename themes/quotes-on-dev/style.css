@@ -429,7 +429,7 @@ textarea {
 a {
   color: royalblue; }
   a:visited {
-    color: purple; }
+    color: #00cc00; }
   a:hover, a:focus, a:active {
     color: midnightblue; }
   a:focus {
@@ -595,13 +595,15 @@ a {
   clear: both;
   margin: 0 0 1.5rem; }
 
-@media (min-width: 1240px) {
-  .site-content {
-    width: 50vw;
-    margin: 0 auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; } }
+.site-content {
+  width: 1080px; }
+  @media (min-width: 1240px) {
+    .site-content {
+      width: 50vw;
+      margin: 0 auto;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; } }
 
 .fa-quote-left, .fa-quote-right {
   display: none; }

@@ -1,6 +1,6 @@
 # Quotes on Dev Starter
 
-A WordPress starter theme for the Quotes on Dev project, forked from Underscores.
+Website built with WordPress for display quotes from various authors and submit new quotes.
 
 ## Installation
 
@@ -21,3 +21,5 @@ Next you'll need to run `npm install` **inside your theme directory** to install
 Lastly, be sure to update your `gulpfile.js` with the appropriate URL for the Browsersync proxy (so change `localhost[:port-here]/[your-dir-name-here]` to the appropriate localhost URL).
 
 And now would be a good time to `git init` :)
+
+![](Screenshot 2020-02-05 18.10.55.png)
