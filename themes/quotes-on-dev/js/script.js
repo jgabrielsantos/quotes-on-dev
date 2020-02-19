@@ -21,4 +21,31 @@
       
       });
     });
+
+    document.addEventListener( 'wpcf7mailsent', function( submit ) {
+      submit.preventDefault();
+
+      let newQuote = {
+          'title': $( 'input[name=\'author\']' ).val(),
+          'content': $( 'textarea[name=\'quote\']' ).val(),
+          '_qod_quote_source': $( 'input[name=\'source\']' ).val(),
+          '_qod_quote_source_url': $( 'input[name=\'source-url\']' ).val(),
+          'status': 'publish'
+      };
+
+      $.ajax({
+          method: 'POST',
+          url: red_vars.rest_url + 'wp/v2/posts',
+          context: document.body,
+          data: newQuote,
+          beforeSend: function(xhr) {
+              xhr.setRequestHeader('X-WP-Nonce', red_vars.wpapi_nonce);
+          }
+      }).done(function(data) {
+          window.location.href = data.link;
+          console.log('quote submitted');
+      });
+
+      }, false );
+
   })(jQuery);

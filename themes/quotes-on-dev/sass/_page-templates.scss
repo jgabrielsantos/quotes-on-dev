@@ -67,7 +67,6 @@ a {
 /* All Archives Page */
 .authors, .categories, .tags {
     & .items {
-        width: 100vw;
         list-style: none;
         display: flex;
         flex-wrap: wrap;
@@ -127,6 +126,10 @@ a {
     }
 }
 
+.wpcf7-response-output {
+    color: #ffffff;
+}
+
 /* Search Page */
 .search-form {
     .search-field {
@@ -148,9 +151,10 @@ a {
 
 /* Footer */
 footer {
-    margin: 20px 5%;
-
+    margin: 20px 0;
+    
     @include tablet {
+        margin: 20px 5%;
         display: flex;
         width: 72vw;
     }

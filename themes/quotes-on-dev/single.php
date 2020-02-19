@@ -6,7 +6,7 @@
  */
 
 get_header(); ?>
-
+	<i class="fas fa-quote-left"></i>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
@@ -14,11 +14,10 @@ get_header(); ?>
 
 			<?php get_template_part( 'template-parts/content', 'single' ); ?>
 
-			<?php the_post_navigation(); ?>
 
 		<?php endwhile; // End of the loop. ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
+	<i class="fas fa-quote-right"></i>
 <?php get_footer(); ?>
