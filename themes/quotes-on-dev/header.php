@@ -24,7 +24,7 @@
 
 			<header id="masthead" class="site-header" role="banner">
 				<div class="site-branding">
-					<a href="/QUOTES-ON-DEV/">
+					<a href="<?php echo get_home_url() ?>">
 						<img class="logo" src="<?php echo get_template_directory_uri() ?>/qod-logo.svg" alt="homepage logo">
 					</a>
 				</div><!-- .site-branding -->
