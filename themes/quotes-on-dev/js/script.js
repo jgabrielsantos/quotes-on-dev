@@ -11,9 +11,9 @@
       }
       ).done(function(data) {
         event.preventDefault();
-        var author = data[0].title.rendered;
-        var link =  data[0].slug;
-        var post_content = data[0].content.rendered;
+        let author = data[0].title.rendered;
+        let link =  data[0].slug;
+        let post_content = data[0].content.rendered;
         history.pushState(null, null, link);
 
         $('.author').text(author);
