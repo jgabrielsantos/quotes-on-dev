@@ -43,7 +43,6 @@
           }
       }).done(function(data) {
           window.location.href = data.link;
-          console.log('quote submitted');
       });
 
       }, false );
